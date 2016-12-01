@@ -1,6 +1,7 @@
 body, html {
   padding: 0;
   margin: 0;
+  font-family: Kanit;
 }
 * {
   box-sizing: border-box;
@@ -18,13 +19,13 @@ body, html {
 }
 .content {
   color: #777;
-  font-family: arial;
+  font-weight: 300;
   width: 500px;
   margin: auto;
   line-height: 20px;
   font-size: 16px;
   line-height: 2;
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 /* 1: HEADER */
@@ -33,14 +34,14 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 70px;
-  background: #d3d3d3;
+  height: 80px;
+  background: #fff;
 }
 .header__content {
   max-width: 1200px;
   margin: 0 auto;
-  background: #b8b8b8;
   padding: 0 20px;
+  text-align: center;
 }
 .header__content:after {
   content: '';
@@ -49,14 +50,27 @@ header {
 }
 .header__content > div {
   float: left;
-  text-align: center;
 }
 .header__long-section {
   width: 41.66666667%;
+  padding-top: 20px;
+}
+.header__long-section div {
+  float: left;
+  width: 33.33333333%;
+}
+.header__long-section a {
+  display: block;
+}
+.header__long-section a:hover {
+  background: #da0f03;
 }
 .header__short-section {
   width: 16.66666667%;
-  background: blue;
+  padding-top: 20px;
+}
+.header__short-section a {
+  display: block;
 }
 header a {
   text-transform: uppercase;
